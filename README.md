@@ -17,15 +17,37 @@ systemctl restart asterisk
 
 You Asterisk has been installed and you can now use the extensions feature.
 
-# What extensions are there in this Asterisk 18 configurations files
+# How many extensions are there in configurations files
 
 We have setup the extensions 1000 till 1050.
 
+# How to add more extensions
+
+Adding more extensions to the configurations files can be done by adding the following lines to the pjsip.conf file.
+
+```
+;==========Extension
+[1051](aor-single-reg)
+[1051](auth-userpass)
+username=1051
+
+[1051](endpoint-basic)
+auth=1051
+outbound_auth=1051
+aors=1051
+```
+
+For this example we have used the extension 1051 to give you an idea.
+After you have set the new settings you'll need to restart your Asterisk with the following command.
+
+```
+systemctl restart asterisk
+```
+
 # I need help with my Asterisk 18
 
-We have created this settings to help with settings up a Asterisk 18 configurations system. 
 Need help with your Asterisk, or have any questions. 
-You can contact us directly through our Asterisk cloud homepage on www.sipwebclient.com
+You can contact us directly through our Asterisk cloud homepage on www.sipwebclient.com.
 
 
 
