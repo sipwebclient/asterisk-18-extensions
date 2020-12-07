@@ -1,4 +1,4 @@
-# asterisk-18-extensions
+# Asterisk 18 Extensions
 
 On this GitHub page, you can find the basic configuration settings for an Asterisk 18 server with 50 extensions. 
 
