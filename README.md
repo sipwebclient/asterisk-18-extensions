@@ -2,28 +2,33 @@
 
 On this GitHub page, you can find the basic configuration settings for an Asterisk 18 server with 50 extensions. 
 
+Requirements
+
+- Linux Server
+- Asterisk 18 installed
+
 # How to setup Extensions for Asterisk 18
 
-To setup, the configurations for your Asterisk server do the following:
+To set up the extensions for your Asterisk server do the following:
 
-- Add the files to your Asterisk directory
+- Add the GitHub files to your Asterisk directory ["etc/asterisk"]
 - Update the pjsip.conf file with; [your server public ip], [your server private ip], [the extension passwords]
 
-After you have set the configurations files, restart your Asterisk 18 with the following command
+After this, restart your Asterisk 18
 
 ```
 systemctl restart asterisk
 ```
 
-You Asterisk has been installed and you can now use the extensions feature.
+The extensions for your Asterisk 18 has now been installed.
 
-# How many extensions are there in configurations files
+# How many extensions have we added?
 
-We have setup the extensions 1000 till 1050.
+We have added the extension numbers 1000 till 1050.
 
 # How to add more extensions
 
-Adding more extensions to the configurations files can be done by adding the following lines to the pjsip.conf file.
+Adding more extensions to the configuration files can be done by adding the following lines to the pjsip.conf [etc/asterisk/pjsip.conf] file.
 
 ```
 ;==========Extension
@@ -37,8 +42,8 @@ outbound_auth=1051
 aors=1051
 ```
 
-For this example we have used the extension 1051 to give you an idea.
-After you have set the new settings you'll need to restart your Asterisk with the following command.
+For this example, we have used extension 1051.
+After you have set the new settings you'll need to restart your Asterisk.
 
 ```
 systemctl restart asterisk
@@ -47,7 +52,8 @@ systemctl restart asterisk
 # I need help with my Asterisk 18
 
 Need help with your Asterisk, or have any questions. 
-You can contact us directly through our Asterisk cloud homepage on www.sipwebclient.com.
+You can contact us directly through our Asterisk Cloud homepage on www.sipwebclient.com.
+
 
 
 
